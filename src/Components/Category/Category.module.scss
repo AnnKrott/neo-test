@@ -1,0 +1,15 @@
+.Category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.title {
+    font-size: 20px;
+    color: #838383;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 40px;
+
+}

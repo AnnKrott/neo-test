@@ -1,0 +1,19 @@
+.Button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--font-color);
+    font-family: inherit;
+}
+
+.base {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.inverted {}
+
+.base-sm {
+    font-size: 14px;
+    font-weight: 500;
+}

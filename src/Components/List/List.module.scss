@@ -1,0 +1,16 @@
+.List li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.List {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}

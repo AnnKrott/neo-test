@@ -1,0 +1,40 @@
+.Item {
+    padding: 20px;
+    background-color: #fff;
+    height: 407px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 20px rgb(227 227 227);
+    text-align: center;
+}
+
+.descr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.img {
+    width: 219px;
+    margin-bottom: 50px;
+}
+
+.title {
+    display: block;
+    font-weight: 600;
+    font-size: 17px;
+    color: #1C1C27;
+}
+
+.price {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
