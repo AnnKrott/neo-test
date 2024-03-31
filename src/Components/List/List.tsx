@@ -17,10 +17,10 @@ export const List = ({ list, flex = ListFlex.COLUMN, className }: ListProps) => 
         <ul className={classNames(classes.List, {}, [classes[flex], className as string])}>
             {list.map((item) => {
                 return (
-                    <li>{item}</li>
+                    <li key={item.id} > {item}</li>
                 )
             })}
-        </ul>
+        </ul >
     )
 };
 
