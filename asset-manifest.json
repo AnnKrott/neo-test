@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b6af2bd1.css",
+    "main.js": "/static/js/main.661404a9.js",
+    "static/media/earpods3.png": "/static/media/earpods3.05d27dbe31695199b2a4.png",
+    "static/media/earpods6.png": "/static/media/earpods6.1a4c57fdcfa0aa1b2601.png",
+    "static/media/earpods5.png": "/static/media/earpods5.6efeac82324568e6f968.png",
+    "static/media/earpods1.png": "/static/media/earpods1.218948ca28365728cc71.png",
+    "static/media/earpods4.png": "/static/media/earpods4.f3aacbf2f241f874ddf2.png",
+    "static/media/earpods2.png": "/static/media/earpods2.2ca1d84e77b411689d31.png",
+    "index.html": "/index.html",
+    "main.b6af2bd1.css.map": "/static/css/main.b6af2bd1.css.map",
+    "main.661404a9.js.map": "/static/js/main.661404a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6af2bd1.css",
+    "static/js/main.661404a9.js"
+  ]
+}
