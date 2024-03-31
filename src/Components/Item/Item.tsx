@@ -8,12 +8,19 @@ import classes from './Item.module.scss';
 interface ItemProps {
     className?: string;
     item: ItemType;
+    onAdd: (item: ItemType) => void;
 }
 
-export const Item = ({ item }: ItemProps) => {
-    // const path = `../../${item.img}`
+export const Item = ({ item, className, onAdd }: ItemProps) => {
+
+    const onClick = () => {
+        onAdd(item)
+    }
+
     return (
-        <div className={classNames(classes.Item, {}, [''])}>
+
+        <div className={classNames(classes.Item, {}, [className as string])}>
+
             <img className={classes.img} src={require(`../../${item.img}`)} alt="" />
 
             <div className={classes.descr} >
@@ -26,9 +33,13 @@ export const Item = ({ item }: ItemProps) => {
                     <Star />
                     <span className={classes.star}>{item.rate}</span>
                 </div>
-                <Button theme={ButtonTheme.BASE}>Купить</Button>
+                <Button
+                    theme={ButtonTheme.BASE}
+                    onClick={onClick}
+                >
+                    Купить
+                </Button>
             </div>
-
 
         </div >
     )

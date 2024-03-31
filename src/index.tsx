@@ -2,12 +2,12 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import { Home } from './Pages/Home/Home';
 import { Cart } from './Pages/Cart/Cart';
 import { Header } from './Components/Header/Header';
 import { Outlet } from 'react-router-dom'
 import { Footer } from './Components/Footer/Footer';
+import { CartContextProvider } from './context/CartContextProvider';
 
 function Layout() {
   return (
@@ -43,7 +43,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <CartContextProvider>
+      <RouterProvider router={router} />
+    </CartContextProvider>
+  </React.StrictMode >
 );
+
+
 

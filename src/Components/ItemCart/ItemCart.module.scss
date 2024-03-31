@@ -1,0 +1,95 @@
+.ItemCart {
+    padding: 18px;
+    background-color: #fff;
+    height: 218px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 20px rgb(227 227 227);
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+    gap: 23px;
+}
+
+.descr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descr:nth-child(1) {
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.img {
+    width: 146px;
+    height: 136px;
+}
+
+.ItemCart svg {
+    margin-left: auto;
+    margin-bottom: auto;
+    transition: all .4s ease;
+}
+
+.ItemCart svg:hover {
+    transform: scale(1.2);
+}
+
+.ItemCart svg path {
+    transition: fill .4s ease;
+}
+
+.ItemCart svg:active path {
+    fill: #1C1C27;
+}
+
+.title {
+    display: block;
+    font-weight: 600;
+    font-size: 17px;
+    color: #1C1C27;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #AAAAAA;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.itemPrice {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    text-align: end;
+}
+
+.quantifier {
+    display: flex;
+    align-items: center;
+}
+
+.quantifier span {
+    display: inline-block;
+    color: #fff;
+    background-color: var(--accent-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 20px;
+    transition: all .4s ease;
+}
+
+.quantifier span:hover {
+    background-color: #1C1C27;
+    transform: rotate(180deg);
+}

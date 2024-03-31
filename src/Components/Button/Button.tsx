@@ -4,7 +4,7 @@ import classes from './Button.module.scss'
 
 export enum ButtonTheme {
     BASE = 'base',
-    INVERTED = 'base-inverted',
+    INVERTED = 'inverted',
     BASE_SM = 'base-sm'
 }
 
@@ -27,7 +27,7 @@ export const Button = memo((props: ButtonProps) => {
         <button
             type="button"
             className={
-                classNames(classes.Button, {}, [classes[theme]])
+                classNames(classes.Button, {}, [classes[theme], className as string])
             }
             {...otherProps}
         >

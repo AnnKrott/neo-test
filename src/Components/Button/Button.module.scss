@@ -4,6 +4,7 @@
     cursor: pointer;
     color: var(--font-color);
     font-family: inherit;
+    transition: all .3s ease;
 }
 
 .base {
@@ -11,7 +12,10 @@
     font-weight: 600;
 }
 
-.inverted {}
+.inverted {
+    background-color: #000;
+    color: #fff;
+}
 
 .base-sm {
     font-size: 14px;

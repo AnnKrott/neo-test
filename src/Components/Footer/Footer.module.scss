@@ -4,7 +4,27 @@
     background-color: #fff;
     margin: 0 40px;
     padding: 40px;
-    border-radius: 30px;
+    padding-bottom: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+@media (max-width: 650px) {
+    .Footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.Footer a {
+    transition: color .3s ease;
+}
+
+.Footer a:hover {
+    color: var(--accent-color);
 }
 
 .socials {
@@ -15,6 +35,10 @@
     display: block;
     cursor: pointer;
     transition: all .3s ease-in;
+}
+
+.socials svg path {
+    transition: fill .3s ease;
 }
 
 .socials li:hover svg path {

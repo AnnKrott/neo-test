@@ -1,15 +1,21 @@
-.Category {
+.ItemsCartList {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
+    grid-template-columns: 1fr;
     row-gap: 30px;
 }
 
-.title {
+h3 {
     font-size: 20px;
-    color: #838383;
     text-align: left;
     margin-bottom: 30px;
     margin-top: 40px;
+}
 
+.title {
+    color: #838383;
+}
+
+.titleCart {
+    color: var(--font-color);
 }

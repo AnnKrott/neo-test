@@ -5,6 +5,12 @@
     border-radius: 30px;
     box-shadow: 0 0 20px 20px rgb(227 227 227);
     text-align: center;
+    transition: all .3s ease;
+}
+
+.Item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px 20px rgb(214, 214, 214);
 }
 
 .descr {
@@ -37,4 +43,15 @@
     gap: 10px;
     font-weight: 600;
     font-size: 17px;
+}
+
+.Item button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 8px;
+    padding: 0 7px;
+}
+
+.Item button:active {
+    background-color: #000;
 }
